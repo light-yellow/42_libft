@@ -10,7 +10,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
 		dest[i] = src[i];
 		i += 1;
 	}
-	while (i < n)
+	while ((size_t)i < n)
 	{
 		dest[i] = '\0';
 		i += 1;
