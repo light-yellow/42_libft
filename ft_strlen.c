@@ -2,10 +2,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t count;
+	unsigned int count;
 
 	count = 0;
 	while (str[count])
 		count += 1;
-	return (count);
+	return ((size_t)count);
 }

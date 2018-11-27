@@ -11,5 +11,5 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i += 1;
 	}
-	return (0);
+	return ((char *)0);
 }
