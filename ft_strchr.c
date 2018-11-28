@@ -1,3 +1,5 @@
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int i;
@@ -11,5 +13,5 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i += 1;
 	}
-	return ((char *)0);
+	return (NULL);
 }
