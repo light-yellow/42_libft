@@ -6,7 +6,7 @@
 /*   By: jgoyette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 09:12:53 by jgoyette          #+#    #+#             */
-/*   Updated: 2018/11/29 09:12:55 by jgoyette         ###   ########.fr       */
+/*   Updated: 2018/11/29 09:47:31 by jgoyette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
-	unsigned int i;
+	size_t	i;
 
 	i = 0;
-	while (src[i] && (size_t)i < n)
+	while (src[i] && i < n)
 	{
 		dest[i] = src[i];
 		i += 1;
 	}
-	while ((size_t)i < n)
+	while (i < n)
 	{
 		dest[i] = '\0';
 		i += 1;
