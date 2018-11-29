@@ -6,7 +6,7 @@
 /*   By: jgoyette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 09:13:14 by jgoyette          #+#    #+#             */
-/*   Updated: 2018/11/29 10:02:44 by jgoyette         ###   ########.fr       */
+/*   Updated: 2018/11/29 10:57:31 by jgoyette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t count;
 
 	count = 0;
-	while (str[count])
+	while (s[count])
 		count += 1;
 	return (count);
 }
