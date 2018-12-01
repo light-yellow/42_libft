@@ -16,7 +16,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char *tmp;
 
-	tmp = (unsigned char *)malloc(sizeof(unsigned char) * len);
+	tmp = (unsigned char *)ft_memalloc(sizeof(unsigned char) * len);
 	if (!tmp)
 		return (NULL);
 	ft_memcpy(tmp, src, len);
