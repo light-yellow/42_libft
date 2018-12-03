@@ -2,5 +2,8 @@
 
 char	*ft_strnew(size_t size)
 {
-	return ((char *)ft_memalloc(size + 1));
+	if (size == (size_t)-1)
+		return (NULL);
+	else
+		return ((char *)ft_memalloc(size + 1));
 }
