@@ -6,6 +6,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	ptr = (char *)ft_memalloc(len + 1);
 	if (s && ptr)
-		ft_strcpy(ptr, (char *)s +  start, len);
+		ft_strncpy(ptr, (char *)s +  start, len);
 	return (ptr);
 }
