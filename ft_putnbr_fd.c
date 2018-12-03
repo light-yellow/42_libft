@@ -13,5 +13,5 @@ void	ft_putnbr_fd(int n, int fd)
 		tmp_n = (unsigned int)n;
 	if (tmp_n >= 10)
 		ft_putnbr_fd(tmp_n / 10, fd);
-	ft_putchar_fd((char)(tmp_n % 10) + '0', fd);
+	ft_putchar_fd((char)(tmp_n % 10 + 48), fd);
 }
