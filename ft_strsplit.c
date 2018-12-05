@@ -47,7 +47,7 @@ char		**ft_strsplit(char const *s, char c)
 	tab_i = 0;
 	if (s && c)
 	{
-		if (tab = (char **)ft_memalloc(sizeof(char *) * (ft_count(s, c))))
+		if ((tab = (char **)ft_memalloc(sizeof(char *) * (ft_count(s, c)))))
 		{
 			while (*s)
 			{

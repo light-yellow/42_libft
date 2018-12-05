@@ -45,7 +45,6 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
@@ -73,4 +72,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 char	*ft_strndup(const char *s, size_t n);
 void	ft_strarr_del(char **tab);
+int	ft_islower(int c);
+int	ft_isupper(int c);
+
 #endif
