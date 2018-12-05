@@ -20,7 +20,9 @@ static size_t	ft_count(char const *s, char c)
 
 int	main(void)
 {
-	printf("%d\n", ft_count("split  ||this|for|me|||||!|", '|'));
+	char **tab = ft_strsplit("      ", ' ');
+	for (int i = 0; i < 1; i += 1)
+		printf("%s\n", tab[i]);
 	return (0);
 }
 
@@ -34,18 +36,18 @@ char		**ft_strsplit(char const *s, char c)
 	tab_i = 0;
 	if (s && c)
 	{
-		tab = (char **)ft_memalloc(sizeof(char *) * (ft_count(s, c)));
-		if (tab)
+		if (tab = (char **)ft_memalloc(sizeof(char *) * (ft_count(s, c))))
 		{
 			while (*s)
 			{
 				i = 0;
 				while ((char)*s == c)
 					s += 1;
-				while (*s && (char)*s != c)
+				while (*(s + i) && (char)*(s + i) != c)
 					i += 1;
 				if (i > 0)
 					tab[tab_i++] = ft_strndup(s, i);
+				s += i;
 			}
 			tab[tab_i] = NULL;
 		}
