@@ -6,7 +6,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*result;
 
 	result = NULL;
-	if (s1 || s2)
+	if (s1 && s2)
 	{
 		len = ft_strlen((char *)s1) + ft_strlen((char *)s2);
 		result = ft_strnew(len);
