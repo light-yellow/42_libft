@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
 
 static size_t	ft_count(char const *s, char c)
 {
@@ -18,12 +17,24 @@ static size_t	ft_count(char const *s, char c)
 	return (count);
 }
 
-int	main(void)
+static char		**check_tab(char **tab, size_t tab_i)
 {
-	char **tab = ft_strsplit("      ", ' ');
-	for (int i = 0; i < 1; i += 1)
-		printf("%s\n", tab[i]);
-	return (0);
+	size_t i;
+
+	i = 0;
+	if (tab)
+	{
+		while (i < tab_i)
+		{
+			if (!tab[i])
+			{
+				ft_strarr_del(tab);
+				return (NULL);
+			}
+			i += 1;
+		}
+	}
+	return (tab);
 }
 
 char		**ft_strsplit(char const *s, char c)
@@ -52,5 +63,5 @@ char		**ft_strsplit(char const *s, char c)
 			tab[tab_i] = NULL;
 		}
 	}
-	return (tab);
+	return (check_tab(tab, tab_i));
 }

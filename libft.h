@@ -71,6 +71,6 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-char    *ft_strndup(const char *s, size_t n);
-
+char	*ft_strndup(const char *s, size_t n);
+void	ft_strarr_del(char **tab);
 #endif
