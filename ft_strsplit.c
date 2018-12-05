@@ -17,18 +17,18 @@ static size_t	ft_count(char const *s, char c)
 	return (count);
 }
 
-static char		**check_tab(char **tab, size_t tab_i)
+static char		**check_tab(char **tab, size_t tab_size)
 {
 	size_t i;
 
 	i = 0;
 	if (tab)
 	{
-		while (i < tab_i)
+		while (i < tab_size)
 		{
 			if (!tab[i])
 			{
-				ft_strarr_del(tab);
+				ft_strarr_del(tab, tab_size);
 				return (NULL);
 			}
 			i += 1;

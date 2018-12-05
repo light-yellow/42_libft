@@ -1,14 +1,17 @@
 #include "libft.h"
 
-void	ft_strarr_del(char **tab)
+void	ft_strarr_del(char **tab, size_t tab_size)
 {
-	char **tmp_tab;
+	char	**tmp_tab;
+	size_t	i;
 
 	tmp_tab = tab;
-	while (*tmp_tab)
+	i = 0;
+	while (i < tab_size)
 	{
-		ft_strdel(tmp_tab);
-		tmp_tab += 1;
+		if (tmp_tab[i])
+			ft_strdel(tmp_tab[i]);
+		i += 1;
 	}
 	free(tab);
 }
