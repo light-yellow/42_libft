@@ -8,6 +8,6 @@ char	*ft_strndup(const char *s, size_t n)
 	len = ft_strlen(s) + 1;
 	dup = (char *)ft_memalloc(sizeof(char) * len);
 	if (dup)
-		ft_strncpy(dup, s, n);
+		dup = ft_strncpy(dup, s, n);
 	return (dup);
 }

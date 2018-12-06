@@ -2,18 +2,8 @@
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	size_t	i;
-
-	i = 0;
-	while (src[i] && i < len)
-	{
-		dst[i] = src[i];
-		i += 1;
-	}
-	while (i < len)
-	{
-		dst[i] = '\0';
-		i += 1;
-	}
+	ft_bzero((void *)dst, len);
+	len = (len > ft_strlen(src)) ? ft_strlen(src) : len;
+	dst = (char *)ft_memcpy((void *)dst, (const void *)src, len);
 	return (dst);
 }

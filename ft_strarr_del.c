@@ -10,7 +10,7 @@ void	ft_strarr_del(char **tab, size_t tab_size)
 	while (i < tab_size)
 	{
 		if (tmp_tab[i])
-			ft_strdel(tmp_tab[i]);
+			ft_strdel(&tmp_tab[i]);
 		i += 1;
 	}
 	free(tab);

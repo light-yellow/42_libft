@@ -74,5 +74,6 @@ char	*ft_strndup(const char *s, size_t n);
 void	ft_strarr_del(char **tab, size_t tab_size);
 int	ft_islower(int c);
 int	ft_isupper(int c);
+int	ft_isspace(int c);
 
 #endif
