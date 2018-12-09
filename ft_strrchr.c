@@ -6,7 +6,7 @@
 /*   By: jgoyette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 09:12:07 by jgoyette          #+#    #+#             */
-/*   Updated: 2018/11/29 09:37:14 by jgoyette         ###   ########.fr       */
+/*   Updated: 2018/12/09 18:43:18 by jgoyette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ char	*ft_strrchr(const char *s, int c)
 		s += 1;
 	}
 	if (c == '\0')
-                return ((char *)s);
+		return ((char *)s);
 	return (result_ptr);
 }
