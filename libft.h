@@ -85,9 +85,10 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void	*ft_memrcpy(void *dst, const void *src, size_t n);
 char	*ft_strndup(const char *s, size_t n);
 void	ft_strarr_del(char **tab, size_t tab_size);
-int		ft_islower(int c);
-int		ft_isupper(int c);
-int		ft_isspace(int c);
-void    *ft_memdup(void const *content, size_t content_size);
+int	ft_islower(int c);
+int	ft_isupper(int c);
+int	ft_isspace(int c);
+void	*ft_memdup(void const *content, size_t content_size);
+void	ft_lstaddend(t_list **alst, t_list *new);
 
 #endif
