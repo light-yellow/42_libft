@@ -6,7 +6,7 @@
 /*   By: jgoyette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/09 18:54:32 by jgoyette          #+#    #+#             */
-/*   Updated: 2018/12/09 18:54:43 by jgoyette         ###   ########.fr       */
+/*   Updated: 2018/12/24 10:10:25 by jgoyette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	ptr_dst = (unsigned char *)dst;
 	ptr_src = (unsigned char *)src;
+	if (dst == src)
+		return (dst);
 	while (i < n)
 	{
 		ptr_dst[i] = ptr_src[i];

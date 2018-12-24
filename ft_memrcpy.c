@@ -6,7 +6,7 @@
 /*   By: jgoyette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/09 18:54:17 by jgoyette          #+#    #+#             */
-/*   Updated: 2018/12/09 18:54:19 by jgoyette         ###   ########.fr       */
+/*   Updated: 2018/12/24 10:10:50 by jgoyette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memrcpy(void *dst, const void *src, size_t n)
 
 	ptr_dst = (unsigned char *)dst;
 	ptr_src = (unsigned char *)src;
+	if (dst == src)
+		return (dst);
 	while (n > 0)
 	{
 		n -= 1;
